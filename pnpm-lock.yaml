@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^18.13.0
   '@vitejs/plugin-vue': ^3.1.0
   typescript: ^4.6.4
   vite: ^4.1.0
@@ -8,12 +9,13 @@ specifiers:
   vue-tsc: ^0.40.4
 
 dependencies:
+  '@types/node': artifactory.intra.xiaojukeji.com/@types/node/18.13.0
   vue: artifactory.intra.xiaojukeji.com/vue/3.2.47
 
 devDependencies:
   '@vitejs/plugin-vue': artifactory.intra.xiaojukeji.com/@vitejs/plugin-vue/3.2.0_vite@4.1.1+vue@3.2.47
   typescript: artifactory.intra.xiaojukeji.com/typescript/4.9.5
-  vite: artifactory.intra.xiaojukeji.com/vite/4.1.1
+  vite: artifactory.intra.xiaojukeji.com/vite/4.1.1_@types+node@18.13.0
   vue-tsc: artifactory.intra.xiaojukeji.com/vue-tsc/0.40.13_typescript@4.9.5
 
 packages:
@@ -291,6 +293,11 @@ packages:
     dev: true
     optional: true
 
+  artifactory.intra.xiaojukeji.com/@types/node/18.13.0:
+    resolution: {integrity: sha1-BADR5s6H6dMDLBnrbFggWw0/eFA=, registry: https://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/@types/node/-/node-18.13.0.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fnode%2F-%2Fnode-18.13.0.tgz}
+    name: '@types/node'
+    version: 18.13.0
+
   artifactory.intra.xiaojukeji.com/@vitejs/plugin-vue/3.2.0_vite@4.1.1+vue@3.2.47:
     resolution: {integrity: sha1-oUhAid2F1lKPQ1dD+EzdDSFbu1Q=, registry: https://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/@vitejs/plugin-vue/-/plugin-vue-3.2.0.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2F%40vitejs%2Fplugin-vue%2F-%2Fplugin-vue-3.2.0.tgz}
     id: artifactory.intra.xiaojukeji.com/@vitejs/plugin-vue/3.2.0
@@ -301,7 +308,7 @@ packages:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: artifactory.intra.xiaojukeji.com/vite/4.1.1
+      vite: artifactory.intra.xiaojukeji.com/vite/4.1.1_@types+node@18.13.0
       vue: artifactory.intra.xiaojukeji.com/vue/3.2.47
     dev: true
 
@@ -650,8 +657,9 @@ packages:
     hasBin: true
     dev: true
 
-  artifactory.intra.xiaojukeji.com/vite/4.1.1:
+  artifactory.intra.xiaojukeji.com/vite/4.1.1_@types+node@18.13.0:
     resolution: {integrity: sha1-Oxi4Gk6Fzj31y9v0xofZPr9ALms=, registry: https://npm.intra.xiaojukeji.com/, tarball: http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/vite/-/vite-4.1.1.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2Fvite%2F-%2Fvite-4.1.1.tgz}
+    id: artifactory.intra.xiaojukeji.com/vite/4.1.1
     name: vite
     version: 4.1.1
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -677,6 +685,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': artifactory.intra.xiaojukeji.com/@types/node/18.13.0
       esbuild: artifactory.intra.xiaojukeji.com/esbuild/0.16.17
       postcss: artifactory.intra.xiaojukeji.com/postcss/8.4.21
       resolve: artifactory.intra.xiaojukeji.com/resolve/1.22.1
